@@ -42,7 +42,12 @@ body h3 {
 .projects_contianer{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 6px;
+    border: 3px solid #C0C0C0;
 }
+
+
+
 
 
 
