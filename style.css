@@ -41,15 +41,15 @@ body h3 {
 
 .projects_contianer{
     display: grid;
+    background-color: lightblue;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 6px;
+    grid-row-gap: 6px;
     border: 3px solid #C0C0C0;
 }
 
-
-
-
-
+.project_info, .carousel{
+    background-color:#E8E8E8;
+    }
 
 
 footer {
