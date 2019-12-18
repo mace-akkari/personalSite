@@ -3,16 +3,22 @@ body {
     margin: 0;
     font-family: 'Alegreya' , sans-serif;
     text-align: center;
-    background-color: #E8E8E8; }
+    background-color: #E8E8E8;
+}
+
 body .content {
-      width: 90%;
-      margin-left: auto;
-      margin-right: auto; }
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 body .content ul {
-        padding: 0; }
+    padding: 0;
+}
+
 body h3 {
-      font-size: 1.5em;
-    }
+    font-size: 1.5em;
+}
 
 * {
     box-sizing: border-box;
@@ -39,7 +45,7 @@ body h3 {
     opacity: .8;
 }
 
-.projects_contianer{
+.projects_contianer {
     display: grid;
     background-color: lightblue;
     grid-template-columns: repeat(2, 1fr);
@@ -47,11 +53,11 @@ body h3 {
     border: 3px solid #C0C0C0;
 }
 
-.project_info, .carousel{
-    background-color:#E8E8E8;
-    }
-
+.project_info, .carousel {
+    background-color: #E8E8E8;
+}
 
 footer {
     border: 6px solid black;
-    text-align: center; }
+    text-align: center;
+}
