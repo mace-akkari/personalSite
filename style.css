@@ -57,6 +57,16 @@ body h3 {
     background-color: #E8E8E8;
 }
 
+
+.my_carousel img {
+    height: auto;
+    width: 40%;
+    border: 3px solid #C0C0C0;
+}
+
+
+
+
 footer {
     border: 6px solid black;
     text-align: center;
