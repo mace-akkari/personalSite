@@ -3,6 +3,7 @@ const imagePaths = Array.from((new Array(4)), (_, i) => `crypto-pic${i}.png`);
 
 // Contanier and image elements 
 const container = document.createElement('DIV');
+container.classList.add("my_carousel");
 const imageContainer = document.createElement('OL');
 imagePaths.forEach((path) => {
     const li = document.createElement('LI');
@@ -13,5 +14,5 @@ imagePaths.forEach((path) => {
 }); 
 
 container.appendChild(imageContainer);
-document.body.appendChild(container);
+document.body.appendChild(container); 
 
