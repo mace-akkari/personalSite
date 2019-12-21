@@ -20,5 +20,16 @@ document.body.appendChild(container);
 const leftButton = document.createElement('BUTTON');
 leftButton.textContent = "Prev";
 container.appendChild(leftButton);
+const rightButton = document.createElement('BUTTON');
+rightButton.textContent = "Next";
+rightButton.addEventListener('click', () => {
+    const current = document.querySelector('.active');
+    const next = current.nextElementSibling ? current.nextElementSibling : document.querySelector('LI');
+    current.classList.remove('active');
+    next.classList.add('active')
+});
+container.appendChild(rightButton);
 
+//Setup
+document.querySelector('LI').classList.add('active');
 
