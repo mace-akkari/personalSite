@@ -16,3 +16,9 @@ imagePaths.forEach((path) => {
 container.appendChild(imageContainer);
 document.body.appendChild(container); 
 
+//Button elements 
+const leftButton = document.createElement('BUTTON');
+leftButton.textContent = "Prev";
+container.appendChild(leftButton);
+
+
