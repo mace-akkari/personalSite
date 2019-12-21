@@ -20,16 +20,23 @@ document.body.appendChild(container);
 const leftButton = document.createElement('BUTTON');
 leftButton.textContent = "Prev";
 container.appendChild(leftButton);
+leftButton.addEventListener('click', () => {
+    const current = document.querySelector('.active');
+    const next = current.previousElementSibling ? current.previousElementSibling : document.querySelector('li:last-child');
+    current.classList.remove('active');
+    next.classList.add('active');
+});
+container.appendChild(leftButton);
+
 const rightButton = document.createElement('BUTTON');
 rightButton.textContent = "Next";
 rightButton.addEventListener('click', () => {
     const current = document.querySelector('.active');
-    const next = current.nextElementSibling ? current.nextElementSibling : document.querySelector('LI');
+    const next = current.nextElementSibling ? current.nextElementSibling : document.querySelector('li');
     current.classList.remove('active');
-    next.classList.add('active')
+    next.classList.add('active');
 });
 container.appendChild(rightButton);
 
 //Setup
-document.querySelector('LI').classList.add('active');
-
+document.querySelector('li').classList.add('active');
