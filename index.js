@@ -21,31 +21,21 @@ const navButton = (label, listener) => {
     button.textContent = label;
     button.addEventListener('click', listener);
     container.appendChild(button);
-
 };
 
-
 //Button elements 
-const leftButton = document.createElement('BUTTON');
-leftButton.textContent = "Prev";
-container.appendChild(leftButton);
-leftButton.addEventListener('click', () => {
+navButton("Prev", () => {
     const current = document.querySelector('.active');
     const next = current.previousElementSibling ? current.previousElementSibling : document.querySelector('li:last-child');
     current.classList.remove('active');
     next.classList.add('active');
 });
-container.appendChild(leftButton);
-
-const rightButton = document.createElement('BUTTON');
-rightButton.textContent = "Next";
-rightButton.addEventListener('click', () => {
+navButton("Next", () => {
     const current = document.querySelector('.active');
     const next = current.nextElementSibling ? current.nextElementSibling : document.querySelector('li');
     current.classList.remove('active');
     next.classList.add('active');
 });
-container.appendChild(rightButton);
 
 //Setup
 document.querySelector('li').classList.add('active');
