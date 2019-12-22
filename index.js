@@ -23,18 +23,22 @@ const navButton = (label, listener) => {
     container.appendChild(button);
 };
 
+//Function for active class
+const isActive = (current, next) => {
+    current.classList.remove('active');
+    next.classList.add('active');
+};
+
 //Button elements 
 navButton("Prev", () => {
     const current = document.querySelector('.active');
     const next = current.previousElementSibling ? current.previousElementSibling : document.querySelector('li:last-child');
-    current.classList.remove('active');
-    next.classList.add('active');
+    isActive(current, next);
 });
 navButton("Next", () => {
     const current = document.querySelector('.active');
     const next = current.nextElementSibling ? current.nextElementSibling : document.querySelector('li');
-    current.classList.remove('active');
-    next.classList.add('active');
+    isActive(current, next);
 });
 
 //Setup
