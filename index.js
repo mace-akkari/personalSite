@@ -12,9 +12,18 @@ imagePaths.forEach((path) => {
     li.appendChild(image);
     imageContainer.appendChild(li);
 }); 
-
 container.appendChild(imageContainer);
 document.body.appendChild(container); 
+
+// Function for next and prev buttons
+const navButton = (label, listener) => {
+    const button = document.createElement('Button');
+    button.textContent = label;
+    button.addEventListener('click', listener);
+    container.appendChild(button);
+
+};
+
 
 //Button elements 
 const leftButton = document.createElement('BUTTON');
