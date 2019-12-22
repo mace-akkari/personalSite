@@ -26,6 +26,10 @@ body h3 {
     list-style-type: none;
 }
 
+.main_content {
+    margin: 20px;
+}
+
 .heading {
     background-image: url(logo.svg);
     background-size: 100%;
@@ -37,7 +41,7 @@ body h3 {
     justify-content: center;
 }
 
-.heading .heading-name {
+.heading .heading_name {
     padding: 20px;
     border: 3px solid #C0C0C0;
     color: black;
@@ -56,8 +60,6 @@ body h3 {
 .project_info, .carousel {
     background-color: #E8E8E8;
 }
-
-
 .my_carousel {
     position: relative;
 }
@@ -83,7 +85,7 @@ body h3 {
 
 .my_carousel img {
     height: auto;
-    width: 50%;
+    width: 100%;
     border: 3px solid #C0C0C0;
 }
 
