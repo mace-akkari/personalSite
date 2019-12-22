@@ -84,13 +84,13 @@ body h3 {
 }
 
 .my_carousel img {
-    height: auto;
+    height: 100%;
     width: 100%;
     border: 3px solid #C0C0C0;
 }
 
 .my_carousel button {
-    height: 50px;
+    height: 9%;
     position: absolute;
     top: 50%;
 }
