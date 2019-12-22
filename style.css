@@ -58,14 +58,34 @@ body h3 {
 }
 
 
-.my_carousel img {
-    height: auto;
-    width: 40%;
-    border: 3px solid #C0C0C0;
+.my_carousel {
+    position: relative;
 }
 
+.my_carousel ol {   
+    display: grid;
+    list-style-type: none;
+    padding: 0;
+}
 
+.my_carousel li {
+    transition: opacity 0.5s linear, transform 0.5s linear;
+    transform: rotateZ(0) scale(0);
+    grid-column: 1;
+    grid-row: 1;
+    opacity: 0;
+}
 
+.my_carousel li.active {
+    opacity: 1;
+    transform: rotateZ(360deg) scale(1);
+}
+
+.my_carousel img {
+    height: auto;
+    width: 50%;
+    border: 3px solid #C0C0C0;
+}
 
 footer {
     border: 6px solid black;
