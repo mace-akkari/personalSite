@@ -17,7 +17,7 @@ document.body.appendChild(container);
 
 // Function for next and prev buttons
 const navButton = (label, listener) => {
-    const button = document.createElement('Button');
+    const button = document.createElement('BUTTON');
     button.textContent = label;
     button.addEventListener('click', listener);
     container.appendChild(button);
