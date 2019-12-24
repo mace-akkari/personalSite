@@ -1,7 +1,16 @@
 // Generate image path  
-const cryptoPath = Array.from((new Array(4)), (_, i) => `crypto-pic${i}.png`);
+const crypto = Array.from((new Array(10)), (_, i) => `./projectImgs/crypto/crypto-pic${i}.png`);
+const reactCrypto = Array.from((new Array(8)), (_, i) => `./projectImgs/reactCrypto/react-crypto${i}.png`);
+const maceFitness = Array.from((new Array(16)), (_, i) => `./projectImgs/maceFitness/maceFitness-pic${i}.png`);
+const repoVx2 = Array.from((new Array(6)), (_, i) => `./projectImgs/repoV2/vue2-pic${i}.png`);
+const repoVx3 = Array.from((new Array(6)), (_, i) => `./projectImgs/repoV3/vue3-pic${i}.png`);
 
-createCarousel("#firstCarousel", cryptoPath);
+createCarousel("#firstCarousel", crypto);
+createCarousel("#secondCarousel", reactCrypto);
+createCarousel("#thirdCarousel", maceFitness);
+createCarousel("#fourthCarousel", repoVx2);
+createCarousel("#fifthCarousel", repoVx3);
+
 
 // Contanier and image elements 
 function createCarousel(target, imagePaths) {
