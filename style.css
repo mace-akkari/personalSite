@@ -1,3 +1,7 @@
+:root {
+    --main-color: #C0C0C0;  
+  }
+
 body {
     color: black;
     margin: 0;
@@ -43,7 +47,7 @@ body h3 {
 
 .heading .heading_name {
     padding: 20px;
-    border: 3px solid #C0C0C0;
+    border: 3px solid var(--main-color);
     color: black;
     background-color: #F8F8F8;
     opacity: .8;
@@ -51,15 +55,16 @@ body h3 {
 
 .projects_contianer {
     display: grid;
-    background-color: lightblue;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 6px;
-    border: 3px solid #C0C0C0;
+    grid-row-gap: 5px; 
+    border: 3px solid var(--main-color);
 }
 
 .project_info, .carousel {
     background-color: #E8E8E8;
+    margin: 0px 5px;
 }
+
 .my_carousel {
     position: relative;
 }
@@ -86,11 +91,11 @@ body h3 {
 .my_carousel img {
     height: 100%;
     width: 100%;
-    border: 3px solid #C0C0C0;
+    border: 3px solid var(--main-color);
 }
 
 .my_carousel button {
-    height: 9%;
+    background-color: var(--main-color);
     position: absolute;
     top: 50%;
 }
