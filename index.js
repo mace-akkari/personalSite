@@ -50,12 +50,12 @@ function createCarousel(target, imagePaths) {
     //Button elements 
     navButton("Prev", () => {
         const current = container.querySelector('.active');
-        const next = current.previousElementSibling ? current.previousElementSibling : document.querySelector('li:last-child');
+        const next = current.previousElementSibling ? current.previousElementSibling : container.querySelector('li:last-child');
         isActive(current, next);
     });
     navButton("Next", () => {
         const current = container.querySelector('.active');
-        const next = current.nextElementSibling ? current.nextElementSibling : document.querySelector('li');
+        const next = current.nextElementSibling ? current.nextElementSibling : container.querySelector('li');
         isActive(current, next);
     });
 
