@@ -4,13 +4,14 @@ const reactCrypto = Array.from((new Array(8)), (_, i) => `./projectImgs/reactCry
 const maceFitness = Array.from((new Array(16)), (_, i) => `./projectImgs/maceFitness/maceFitness-pic${i}.png`);
 const repoVx2 = Array.from((new Array(6)), (_, i) => `./projectImgs/repoV2/vue2-pic${i}.png`);
 const repoVx3 = Array.from((new Array(6)), (_, i) => `./projectImgs/repoV3/vue3-pic${i}.png`);
+const sampleCv = Array.from((new Array(7)), (_, i) => `./projectImgs/sampleCv/sampleCv-pic${i}.png`);
 
 createCarousel("#firstCarousel", crypto);
 createCarousel("#secondCarousel", reactCrypto);
 createCarousel("#thirdCarousel", maceFitness);
 createCarousel("#fourthCarousel", repoVx2);
 createCarousel("#fifthCarousel", repoVx3);
-
+createCarousel("#sixthCarousel", sampleCv);
 
 // Contanier and image elements 
 function createCarousel(target, imagePaths) {
