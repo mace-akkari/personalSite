@@ -49,17 +49,17 @@ function createCarousel(target, imagePaths) {
 
     //Button elements 
     navButton("Prev", () => {
-        const current = document.querySelector('.active');
+        const current = container.querySelector('.active');
         const next = current.previousElementSibling ? current.previousElementSibling : document.querySelector('li:last-child');
         isActive(current, next);
     });
     navButton("Next", () => {
-        const current = document.querySelector('.active');
+        const current = container.querySelector('.active');
         const next = current.nextElementSibling ? current.nextElementSibling : document.querySelector('li');
         isActive(current, next);
     });
 
     //Setup
-    document.querySelector('li').classList.add('active');
+    container.querySelector('li').classList.add('active');
 
 }
