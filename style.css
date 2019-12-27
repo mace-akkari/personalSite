@@ -113,6 +113,16 @@ body h3 {
     right: 0;
 }
 
+.pre_req_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+}
+
+.pre_req{
+    padding: 2px;
+}
+
 footer {
     border: 6px solid black;
     text-align: center;
