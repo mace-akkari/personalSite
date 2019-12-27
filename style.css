@@ -1,6 +1,6 @@
 :root {
-    --main-color: #C0C0C0;  
-  }
+    --main-color: #C0C0C0;
+}
 
 body {
     color: black;
@@ -22,6 +22,10 @@ body .content ul {
 
 body h3 {
     font-size: 1.5em;
+}
+
+h4 {
+    text-decoration: underline;
 }
 
 * {
@@ -56,7 +60,7 @@ body h3 {
 .projects_contianer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-row-gap: 5px; 
+    grid-row-gap: 5px;
     border: 3px solid var(--main-color);
 }
 
@@ -69,7 +73,7 @@ body h3 {
     position: relative;
 }
 
-.my_carousel ol {   
+.my_carousel ol {
     display: grid;
     list-style-type: none;
     padding: 0;
@@ -107,20 +111,25 @@ body h3 {
 
 .my_carousel button:nth-of-type(1) {
     left: 0;
-} 
+}
 
 .my_carousel button:nth-of-type(2) {
     right: 0;
 }
 
-.pre_req_container{
+.pre_req_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 5px;
 }
 
-.pre_req{
+.pre_req {
     padding: 2px;
+}
+
+.icons {
+    height: auto;
+    width: 10%;
 }
 
 footer {
