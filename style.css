@@ -1,13 +1,15 @@
 :root {
     --main-color: #C0C0C0;
+    --background-color: #D7F0F4;
 }
 
 body {
     color: black;
     margin: 0;
     font-family: 'Alegreya' , sans-serif;
+    font-weight: bolder;
     text-align: center;
-    background-color: #E8E8E8;
+    background-color: var(--background-color);
 }
 
 body .content {
@@ -24,14 +26,14 @@ body h3 {
     font-size: 1.5em;
 }
 
-h4 {
-    text-decoration: underline;
-}
-
 * {
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+}
+
+.about_me a:visited {
+    color: black;
 }
 
 .main_content {
@@ -64,9 +66,13 @@ h4 {
     border: 3px solid var(--main-color);
 }
 
+.projects_contianer h4{
+    font-size: 1.5em;
+}
+
 .project_info, .carousel {
-    background-color: #E8E8E8;
-    margin: 0px 5px;
+    background-color: var(--background-color);
+    margin: 2px 5px;
 }
 
 .my_carousel {
@@ -110,11 +116,11 @@ h4 {
 }
 
 .my_carousel button:nth-of-type(1) {
-    left: 0;
+    left: 3px;
 }
 
 .my_carousel button:nth-of-type(2) {
-    right: 0;
+    right: 3px;
 }
 
 .pre_req_container {
