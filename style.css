@@ -36,6 +36,11 @@ body h3 {
     color: black;
 }
 
+.about_me a {
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
 .main_content {
     margin: 20px;
 }
@@ -64,6 +69,7 @@ body h3 {
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 5px;
     border: 3px solid var(--main-color);
+    box-shadow: 5px 10px 18px var(--main-color);
 }
 
 .projects_contianer h4{
@@ -111,7 +117,7 @@ body h3 {
 }
 
 .my_carousel button:hover {
-    background-color: blue;
+    background-color: lightblue;
     color: white;
 }
 
