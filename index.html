@@ -143,6 +143,7 @@
 
         // Contanier and image elements 
         function createCarousel(target, imagePaths) {
+            const ACTIVE_CLASSNAME = "active";
             const container = document.createElement('DIV');
             container.classList.add("my_carousel");
             const imageContainer = document.createElement('OL');
@@ -172,24 +173,24 @@
 
             //Function for active class
             const isActive = (current, next) => {
-                current.classList.remove('active');
-                next.classList.add('active');
+                current.classList.remove(ACTIVE_CLASSNAME);
+                next.classList.add(ACTIVE_CLASSNAME);
             };
 
             //Button elements 
             navButton("Prev", () => {
-                const current = container.querySelector('.active');
+                const current = container.querySelector(`.${ACTIVE_CLASSNAME}`);
                 const next = current.previousElementSibling ? current.previousElementSibling : container.querySelector('li:last-child');
                 isActive(current, next);
             });
             navButton("Next", () => {
-                const current = container.querySelector('.active');
+                const current = container.querySelector(`.${ACTIVE_CLASSNAME}`);
                 const next = current.nextElementSibling ? current.nextElementSibling : container.querySelector('li');
                 isActive(current, next);
             });
 
             //Setup
-            container.querySelector('li').classList.add('active');
+            container.querySelector('li').classList.add(ACTIVE_CLASSNAME);
         }
     </script>
 </body>
