@@ -1,6 +1,6 @@
 :root {
     --main-color: #C0C0C0;
-    --background-color: #D7F0F4;
+    --background-color: rgba(240, 235, 235, 0.808);
 }
 
 body {
@@ -129,15 +129,6 @@ body h3 {
     right: 3px;
 }
 
-.pre_req_container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 5px;
-}
-
-.pre_req {
-    padding: 2px;
-}
 
 .icons {
     height: auto;
