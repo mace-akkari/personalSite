@@ -14,19 +14,30 @@
     <div class="heading">
         <div class="heading_name">
             <h1>Mace Akkari</h1>
-            <h2>Junior Front-End Developer</h2>
+            <h2>Junior Web Developer</h2>
         </div>
     </div>
     <section class="main_content">
         <div class="about_me">
             <h3>About Me</h3>
-            <p>A self-motivated/taught Junior Front-End Developer. With the knowledge and guidance of my mentor
-                <a href="https://www.linkedin.com/in/patrick-orrell-86a5a236">Patrick Orrell</a>,
-                I have been able to understand how the world of front-end development works. A curiosity turned hobby
-                and now aiming for a career, my love for the world of programming using JavaScript has grown and my
-                thirst for knowledge grows the more I learn.
+            <p>
+                I'm an alumnus of <a href="https://makers.tech">Makers</a>, looking for my first role as a Junior Web Developer.
+                I originally studied Computer Science at Kingston University before becoming a Personal Trainer. Training individuals 
+                on a daily basis has enhanced my people skills. Every client is different, and I am able to adapt effectively to each one. 
+                Similar to programming, each client is like a project and has specifications of what they want to achieve within a given time. 
+                My client, now mentor, <a href="https://www.linkedin.com/in/patrick-orrell-86a5a236">Patrick Orrell</a>, has helped guide me during my transition.
+                <br />
+                <br />
+                I began my coding journey while trying to find an app that would help my clients and I with their training routine. I wanted an app that would 
+                allow me to take videos of them while they were doing their workout, track their progress and a booking system. As most of them would need a few 
+                sessions before fully understanding how to do the routine properly, this was affecting our results and having an app like this, it would have 
+                accelerated their progression and reach their target faster. I couldn’t find an app on the market and so, with the help of Patrick Orrell, I attempted to build my own. I started to understand what programming 
+                was with Python and moved on JavaScript. During my time at Makers, I also studied Ruby and enjoyed learning another language. Whilst 
+                self-learning I found myself dreaming of the code and that it was on my mind all the time. It became clear to me I was enjoying myself 
+                coding and wanted to make it a career.
 
             </p>
+
         </div>
 
         <div class="projects">
@@ -159,12 +170,12 @@
             };
 
             //Button elements 
-            navButton("Prev", () => {
+            navButton("⬅", () => {
                 const current = container.querySelector(`.${ACTIVE_CLASSNAME}`);
                 const next = current.previousElementSibling ? current.previousElementSibling : container.querySelector('li:last-child');
                 isActive(current, next);
             });
-            navButton("Next", () => {
+            navButton("⮕", () => {
                 const current = container.querySelector(`.${ACTIVE_CLASSNAME}`);
                 const next = current.nextElementSibling ? current.nextElementSibling : container.querySelector('li');
                 isActive(current, next);

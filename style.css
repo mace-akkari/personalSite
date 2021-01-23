@@ -32,6 +32,10 @@ body h3 {
     list-style-type: none;
 }
 
+.about_me p {
+    text-align: start;
+}
+
 .about_me a:visited {
     color: black;
 }
@@ -40,6 +44,7 @@ body h3 {
     text-decoration: underline;
     font-weight: bolder;
 }
+
 
 .main_content {
     margin: 20px;
