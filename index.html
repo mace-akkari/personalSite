@@ -44,11 +44,13 @@
             <h3>Projects</h3>
             <div class="projects_contianer">
                 <article class="project_info">
-                    <h4>Crypto Api using Vanilla JavaScript:</h4>
-                    <p>In this project I used a fetch API to retrieve the current price of a selected crypoto currency
-                        in fiat money. I created this is app using only JavaScript to minipulate the DOM. Also applying
-                        Webpack for the
-                        first time to generate a local server</p>
+                    <h4>CatchMe:</h4>
+                    <p> A two-week final project while at Makers Academy, in a team of four we created a mobile running app. 
+                        React was the chosen framework while JavaScript Geolocation was used to track the individual user’s location. 
+                        Sounds were added to buttons and the running page, this was one of the many new things I learnt whilst working on this app.  
+                        This was an amazing project where I gained a priceless lesson in the value of planning and team work. 
+                        While working with a mobile first approach, I experienced issues with different browsers and the need to learn cross-browser compatibility. 
+                    </p>
                 </article>
                 <div class="carousel">
                     <div id="firstCarousel"></div>
@@ -58,19 +60,16 @@
                     <div id="secondCarousel"></div>
                 </div>
                 <article class="project_info">
-                    <h4>Crypto Api using React:</h4>
-                    <p>This was my first attempt in building a project using React, I used a fetch API to retrieve the
-                        current price of a selected crypoto currency in fiat money.</p>
+                    <h4>Makers BnB:</h4>
+                    <p>My first experience working in a team, this one-week project is a Air BnB clone and was made using Ruby on Rails. We worked in an agile environment and used daily 
+                        meetings and sprints to get the projected completed. SQL and tableplus were used to store the user data. 
+                     </p>
                 </article>
 
                 <article class="project_info">
-                    <h4>Mace Fitness:</h4>
-                    <p>This project was what I wanted to create before getting into Web development, unawre of the
-                        various programming languages need to render what seems simple to a novice. This was also my
-                        introduction into the world of databases, using MongoDB I was able to send and retrieve data
-                        entered into my table. The use of Pug as a templating engine was applied, this was enjoyable and
-                        interesting as it was a a simpler version of HTML. Express.js was used as my framework of
-                        choice.</p>
+                    <h4>Fruity:</h4>
+                    <p>I was intruiged by lucky packs in games and how the probability works. This slot machine game was 
+                        done using vanilla JavaScript. This was the first time I used cookies to track the users score, importing cookie-parser.</p>
                 </article>
                 <div class="carousel">
                     <div id="thirdCarousel"></div>
@@ -80,17 +79,19 @@
                     <div id="fourthCarousel"></div>
                 </div>
                 <article class="project_info">
-                    <h4>Repo using Webpack & Vue.js v.2:</h4>
-                    <p>In this project I had chosen Vue.js as my framework of choice, using Webpack to have render a
-                        local server. The aim of this project was to render the selected information using Ajax,
-                        resulting in my app showing all the repos from Vue.js's GitHub account.</p>
+                    <h4>Mace Fitness:</h4>
+                    <p>This project was what I wanted to create before getting into Web development, unawre of the
+                        various programming languages need to render what seems simple to a novice. This was also my
+                        introduction into the world of databases, using MongoDB I was able to send and retrieve data
+                        entered into my table. The use of Pug as a templating engine was applied, this was enjoyable and
+                        interesting as it was a a simpler version of HTML. Express.js was used as my framework of
+                        choice.</p>
                 </article>
 
                 <article class="project_info">
-                    <h4>Repo using Vue.js v.3:</h4>
-                    <p>Further research into Vue led me to the path of Vue CLI, which I found did not require me to use
-                        Webpack as an addition due to it being built-in. I recreated my Vue v.2 project using Vue CLI
-                    </p>
+                    <h4>Crypto Api using React:</h4>
+                    <p>My interest in crypto currency, gave me an idea to build a price tracker. This was my first attempt in building a project using React, I used a fetch API to retrieve the
+                        current price of a selected crypto currency in fiat money.</p>
                 </article>
                 <div class="carousel">
                     <div id="fifthCarousel"></div>
@@ -100,8 +101,11 @@
                     <div id="sixthCarousel"></div>
                 </div>
                 <article class="project_info">
-                    <h4>Sample Cv:</h4>
-                    <p>A basic project built using a css grids</p>
+                    <h4>Repo using Vue.js v.3:</h4>
+                    <p>The aim of this project was to render the selected information using Ajax, resulting in my app showing all the repos from Vue.js's GitHub account. 
+                        This project is an update my Vue v.2 project. While learning and building my project, I found version 3 and that led me to the path of Vue CLI, 
+                        which I found did not require me to use Webpack as an addition due to it being built-in. 
+                        </p>
                 </article>
             </div>
         </div>
@@ -114,24 +118,25 @@
     </section>
 
     <footer>
-        <p>&copy; Mace Akkari 2020</p>
+        <p>&copy; Mace Akkari 2021</p>
     </footer>
 
     <script>
         // Generate image path  
-        const crypto = Array.from((new Array(10)), (_, i) => `./projectImgs/crypto/crypto-pic${i}.png`);
+        
         const reactCrypto = Array.from((new Array(8)), (_, i) => `./projectImgs/reactCrypto/react-crypto${i}.png`);
         const maceFitness = Array.from((new Array(16)), (_, i) => `./projectImgs/maceFitness/maceFitness-pic${i}.png`);
-        const repoVx2 = Array.from((new Array(6)), (_, i) => `./projectImgs/repoV2/vue2-pic${i}.png`);
+        const catchMe = Array.from((new Array(10)), (_, i) => `./projectImgs/catchMe/catchMe-pic${i}.png`);
         const repoVx3 = Array.from((new Array(6)), (_, i) => `./projectImgs/repoV3/vue3-pic${i}.png`);
-        const sampleCv = Array.from((new Array(7)), (_, i) => `./projectImgs/sampleCv/sampleCv-pic${i}.png`);
+        const makersBnB = Array.from((new Array(10)), (_, i) => `./projectImgs/makersBnB/makersBnB-pic${i}.png`);
+        const fruity = Array.from((new Array(10)), (_, i) => `./projectImgs/fruity/fruity-pic${i}.png`);
 
-        createCarousel("#firstCarousel", crypto);
-        createCarousel("#secondCarousel", reactCrypto);
-        createCarousel("#thirdCarousel", maceFitness);
-        createCarousel("#fourthCarousel", repoVx2);
-        createCarousel("#fifthCarousel", repoVx3);
-        createCarousel("#sixthCarousel", sampleCv);
+        createCarousel("#firstCarousel", catchMe);
+        createCarousel("#secondCarousel", makersBnB);
+        createCarousel("#thirdCarousel", fruity);
+        createCarousel("#fourthCarousel", maceFitness);
+        createCarousel("#fifthCarousel", reactCrypto);
+        createCarousel("#sixthCarousel", repoVx3);
 
         // Contanier and image elements 
         function createCarousel(target, imagePaths) {
