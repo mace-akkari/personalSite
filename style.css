@@ -6,9 +6,8 @@
 body {
     color: black;
     margin: 0;
-    font-family: 'Alegreya' , sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bolder;
-    text-align: center;
     background-color: var(--background-color);
 }
 
@@ -26,6 +25,11 @@ body h3 {
     font-size: 1.5em;
 }
 
+h1, h3, h4 {
+    text-align: center;
+}
+
+
 * {
     box-sizing: border-box;
     text-decoration: none;
@@ -33,7 +37,8 @@ body h3 {
 }
 
 .about_me p {
-    text-align: start;
+    text-align: center;
+    font-weight: bold;
 }
 
 .about_me a:visited {
@@ -42,7 +47,6 @@ body h3 {
 
 .about_me a {
     text-decoration: underline;
-    font-weight: bolder;
 }
 
 
@@ -138,6 +142,10 @@ body h3 {
 .icons {
     height: auto;
     width: 10%;
+}
+
+.gitHub {
+    text-align: center;
 }
 
 footer {
