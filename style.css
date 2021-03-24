@@ -55,13 +55,9 @@ h3 {
     color: var(--main-color);
 }
 
-.about_me a {
-    color: #ababab;
+.about_me a, a:visited {
+    color: var(--secondary-color);
 }
-.about_me a:visited {
-    color: #ababab;
-}
-
 
 .section2 {
     padding: 0 5%;
@@ -93,7 +89,6 @@ h3 {
 
 .my_carousel li {
     transition: opacity 0.5s linear, transform 0.5s linear;
-    transform: rotateZ(0) scale(0);
     grid-column: 1;
     grid-row: 1;
     opacity: 0;
@@ -101,7 +96,7 @@ h3 {
 
 .my_carousel li.active {
     opacity: 1;
-    transform: rotateZ(360deg) scale(1);
+    transition: 1.5s;
 }
 
 .my_carousel img {
@@ -130,16 +125,36 @@ h3 {
     right: 3px;
 }
 
+.section3 {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+  clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
+  padding-top: 70px;
+  background-color: #191a1d;
+  color: #FFF
+}
 
 .icons {
     height: auto;
     width: 10%;
+    
 }
 
 .gitHub {
     text-align: center;
 }
 
+.gitHub h3 {
+    font-size: large;
+}
+
 footer {
-    text-align: center;
+  border-top: 1px solid var(--secondary-color) ;
+  margin: 0;
+  color: var(--secondary-color);
+  background-color: #101114;
+  text-align: center;
+}
+
+footer p {
+  padding: 10px 0;
 }
