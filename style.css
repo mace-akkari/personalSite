@@ -1,16 +1,48 @@
 :root {
-    --main-color: #C0C0C0;
-    --background-color: rgba(240, 235, 235, 0.808);
+    --main-color: #fff;
+    --background-color: #fff;
 }
 
 body {
-    color: black;
     margin: 0;
     font-family: 'Inter', sans-serif;
     background-color: var(--background-color);
-    width: 90%;
     margin-left: auto;
     margin-right: auto;
-
 }
 
+h1, h2 {
+    margin: 0;
+    font-size: 33px;
+    font-weight: 800;
+    padding: 0 5%;
+}
+
+h2 {
+    font-size: large;
+    font-style: italic;
+}
+
+.section1 {
+    color: #FFF;
+    background: #191a1d;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+    padding-bottom: 50px;
+}
+ 
+.about_me {
+    padding: 50px 5%;
+    line-height: 140%;
+    color: #ababab;
+    
+}
+
+.about_me h3 {
+    font-size: xx-large;
+    color: #FFF;
+}
+
+.about_me a {
+    color: #ababab;
+}
