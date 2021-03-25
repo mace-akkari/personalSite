@@ -1,154 +1,154 @@
 :root {
-    --main-color: #FFF;
-    --secondary-color: #ababab; 
-    --line-height: 140%;
+  --main-color: #fff;
+  --secondary-color: #ababab;
+  --line-height: 140%;
 }
 
 body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: var(--main-color);
-    margin-left: auto;
-    margin-right: auto;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background-color: var(--main-color);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 * {
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
 }
-
 
 .section1 {
-    color: var(--main-color);
-    background: #191a1d;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
-    padding-bottom: 50px;
+  color: var(--main-color);
+  background: #191a1d;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
+  padding-bottom: 50px;
 }
 
-h1, h2 {
-    margin: 0;
-    font-size: 33px;
-    font-weight: 800;
-    padding: 0 5%;
+h1,
+h2 {
+  margin: 0;
+  font-size: 33px;
+  font-weight: 800;
+  padding: 0 5%;
 }
 
 h2 {
-    font-size: large;
-    font-style: italic;
+  font-size: large;
+  font-style: italic;
 }
- 
+
 h3 {
-    font-size: x-large;
-    text-align: center;
+  font-size: x-large;
+  text-align: center;
 }
 
 .about_me {
-    padding: 50px 5%;
-    line-height: var(--line-height);
-    color: #ababab;
-    
+  padding: 50px 5%;
+  line-height: var(--line-height);
+  color: #ababab;
 }
 
 .about_me h3 {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
-.about_me a, a:visited {
-    color: var(--secondary-color);
+.about_me a,
+a:visited {
+  color: var(--secondary-color);
 }
 
 .section2 {
-    padding: 0 5%;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-row-gap: 10px;
-    border: 3px solid var(--main-color);
-    box-shadow: 5px 10px 18px var(--main-color);
+  padding: 0 5%;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-row-gap: 20px;
+  border: 3px solid var(--main-color);
+  box-shadow: 5px 10px 18px var(--main-color);
 }
 
- .project_info p {
-    line-height: var(--line-height);
- }
+.projects p {
+  line-height: var(--line-height);
+}
 
- .project_info h3 {
-     text-align: start;
-     font-size: large;
- }
+.projects h3 {
+  text-align: start;
+  font-size: large;
+}
 
- .my_carousel {
-    position: relative;
+.my_carousel {
+  position: relative;
 }
 
 .my_carousel ol {
-    display: grid;
-    list-style-type: none;
-    padding: 0;
+  display: grid;
+  list-style-type: none;
+  padding: 0;
 }
 
 .my_carousel li {
-    transition: opacity 0.5s linear, transform 0.5s linear;
-    grid-column: 1;
-    grid-row: 1;
-    opacity: 0;
+  transition: opacity 0.5s linear, transform 0.5s linear;
+  grid-column: 1;
+  grid-row: 1;
+  opacity: 0;
 }
 
 .my_carousel li.active {
-    opacity: 1;
-    transition: 1.5s;
+  opacity: 1;
+  transition: 1.5s;
 }
 
 .my_carousel img {
-    height: 100%;
-    width: 100%;
-    border: 1px solid black ;
-    box-shadow: 12px 19px 9px var(--secondary-color);
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  box-shadow: 12px 19px 9px var(--secondary-color);
 }
 
 .my_carousel button {
-    background-color: var(--main-color);
-    position: absolute;
-    top: 50%;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 50%;
 }
 
 .my_carousel button:hover {
-    background-color: var(--secondary-color);
-    color: white;
+  background-color: var(--secondary-color);
+  color: white;
 }
 
 .my_carousel button:nth-of-type(1) {
-    left: 3px;
+  left: 3px;
 }
 
 .my_carousel button:nth-of-type(2) {
-    right: 3px;
+  right: 3px;
 }
 
 .section3 {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
   clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
   padding-top: 70px;
+  margin-top: 3%;
   background-color: #191a1d;
-  color: #FFF
+  color: #fff;
 }
 
 .icons {
-    height: auto;
-    width: 10%;
-    
+  height: auto;
+  width: 10%;
 }
 
 .gitHub {
-    text-align: center;
+  text-align: center;
 }
 
 .gitHub h3 {
-    font-size: large;
+  font-size: large;
 }
 
 footer {
-  border-top: 1px solid var(--secondary-color) ;
+  border-top: 1px solid var(--secondary-color);
   margin: 0;
   color: var(--secondary-color);
   background-color: #101114;
@@ -157,4 +157,28 @@ footer {
 
 footer p {
   padding: 10px 0;
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 850px) {
+  .projects {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-areas: "img text";
+    grid-gap: 140px;
+  }
+
+  .projects .info {
+    grid-area: text;
+  }
+
+  .projects .carousel {
+    grid-area: img;
+  }
+
+  .projects:nth-child(odd) {
+    grid-template-areas: "text img";
+    grid-template-columns: 1fr 1.5fr;
+  }
 }
