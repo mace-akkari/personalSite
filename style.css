@@ -46,7 +46,7 @@ h3 {
 }
 
 .about_me {
-  padding: 50px 20%;
+  padding: 50px 5%;
   line-height: var(--line-height);
   color: #ababab;
 }
@@ -137,12 +137,33 @@ a:visited {
 }
 
 .section3 p {
-  align-items: center;
-  padding: 0 18%;
+  text-align: center;
+  padding: 0 5%;
 }
+
+.icon_container {
+  display: grid;
+  grid-row-gap: 20px;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "one two three";
+}
+
+.icon_container .gmail {
+  grid-area: one;
+}
+
+.icon_container .linkedin {
+  grid-area: two;
+}
+
+.icon_container .github {
+  grid-area: three;
+}
+
 .icon_img {
   height: auto;
-  width: 15%;
+  width: 30%;
 }
 
 .icons {
@@ -163,6 +184,13 @@ footer p {
 }
 
 @media screen and (min-width: 850px) {
+
+  .about_me p{
+    padding-left: 18%;
+    padding-right: 18%;
+  }
+
+
   .projects {
     display: grid;
     align-items: center;
@@ -190,6 +218,11 @@ footer p {
     align-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "one two three";
+  }
+
+  .icon_img {
+    height: auto;
+    width: 15%;
   }
 
   .icon_container .gmail {
