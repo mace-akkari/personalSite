@@ -16,6 +16,7 @@ body {
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
+  font-size: large;
 }
 
 .section1 {
@@ -29,7 +30,7 @@ body {
 h1,
 h2 {
   margin: 0;
-  font-size: 33px;
+  font-size: 37px;
   font-weight: 800;
   padding: 0 5%;
 }
@@ -45,7 +46,7 @@ h3 {
 }
 
 .about_me {
-  padding: 50px 5%;
+  padding: 50px 20%;
   line-height: var(--line-height);
   color: #ababab;
 }
@@ -128,23 +129,24 @@ a:visited {
 .section3 {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 50px));
   clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 100%);
-  padding-top: 70px;
+  padding: 70px 0 20px 0;
   margin-top: 3%;
   background-color: #191a1d;
   color: #fff;
+  align-self: center;
+}
+
+.section3 p {
+  align-items: center;
+  padding: 0 18%;
+}
+.icon_img {
+  height: auto;
+  width: 15%;
 }
 
 .icons {
-  height: auto;
-  width: 10%;
-}
-
-.gitHub {
   text-align: center;
-}
-
-.gitHub h3 {
-  font-size: large;
 }
 
 footer {
@@ -157,7 +159,7 @@ footer {
 
 footer p {
   padding: 10px 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 @media screen and (min-width: 850px) {
@@ -180,5 +182,25 @@ footer p {
   .projects:nth-child(odd) {
     grid-template-areas: "text img";
     grid-template-columns: 1fr 1.5fr;
+  }
+
+  .icon_container {
+    display: grid;
+    grid-row-gap: 20px;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "one two three";
+  }
+
+  .icon_container .gmail {
+    grid-area: one;
+  }
+
+  .icon_container .linkedin {
+    grid-area: two;
+  }
+
+  .icon_container .github {
+    grid-area: three;
   }
 }
