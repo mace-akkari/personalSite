@@ -243,14 +243,14 @@
         };
 
         //Button elements
-        navButton("⬅", () => {
+        navButton("◀", () => {
           const current = container.querySelector(`.${ACTIVE_CLASSNAME}`);
           const next = current.previousElementSibling
             ? current.previousElementSibling
             : container.querySelector("li:last-child");
           isActive(current, next);
         });
-        navButton("⮕", () => {
+        navButton("▶", () => {
           const current = container.querySelector(`.${ACTIVE_CLASSNAME}`);
           const next = current.nextElementSibling
             ? current.nextElementSibling
