@@ -24,7 +24,7 @@
       <div class="about_me">
         <h3>About Me</h3>
         <p>
-          Currently working at ReLyfe, where I code daily in JavaScript, React, TypeScript 
+          Previously working at ReLyfe, where I coded daily in JavaScript, React, TypeScript 
           and Redux. Within the first month at ReLyfe I was tasked with setting up and 
           maintaining their Cypress testing suite. Given the opportunity to take on this project, 
           I spent time researching and presented my approach. Successfully implementing the testing 
@@ -37,6 +37,54 @@
 
     <section class="section2">
       <h3>Projects</h3>
+
+      <article class="projects">
+        <div class="info">
+          <h3>WhatsApp:</h3>
+          <p>
+            With the majority of people using WhatsApp, I wanted to see how hard it was to create a version 
+            of it using Next.js. While I did use a tutorial for help, their use of Firebase and Firestore was 
+            outdated so I had to spend a lot of time learning the new methods for using it. This project was 
+            also the first time I used Google authentication.   
+          </p>
+        </div>
+
+        <div class="carousel">
+          <div id="seventhCarousel"></div>
+        </div>
+      </article>  
+
+      <article class="projects">
+        <div class="info">
+          <h3>The Martian:</h3>
+          <p>
+            Whilst watching a movie called The Martian, I was intrigued by how they were communicating with each other. 
+            Taking up an interest, I began to research HEX and different base systems. Spinning up React, 
+            I tried recreating the scene in which Mark communicates with NASA using the rover. 
+            Mark is able to write in English, while NASA can only use the characters available in hex.  
+          </p>
+        </div>  
+        <div class="carousel">
+          <div id="fifthCarousel"></div>
+        </div>
+      </article>  
+
+
+      <article class="projects">
+        <div class="info">
+          <h3>Blog site:</h3>
+          <p>
+            This blog project was a way for me to learn Next.js and Sanity. 
+            A simple project that communicates with the backend
+            and user comments that needed to be verified before being displayed on the site. 
+          </p>
+        </div>
+
+        <div class="carousel">
+          <div id="sixthCarousel"></div>
+        </div>
+      </article>  
+
       <article class="projects">
         <div class="info">
           <h3>CatchMe:</h3>
@@ -106,39 +154,7 @@
           <div id="fourthCarousel"></div>
         </div>
       </article>
-
-      <article class="projects">
-        <div class="info">
-          <h3>Crypto Api using React:</h3>
-          <p>
-            My interest in crypto currency, gave me an idea to build a price
-            tracker. This was my first attempt in building a project using React,
-            I used a fetch API to retrieve the current price of a selected crypto
-            currency in fiat money.
-          </p>
-        </div>  
-        <div class="carousel">
-          <div id="fifthCarousel"></div>
-        </div>
-      </article>  
-
-      <article class="projects">
-        <div class="info">
-          <h3>Repo using Vue.js v.3:</h3>
-          <p>
-            The aim of this project was to render the selected information using
-            Ajax, resulting in my app showing all the repos from Vue.js's GitHub
-            account. This project is an update my Vue v.2 project. While learning
-            and building my project, I found version 3 and that led me to the path
-            of Vue CLI, which I found did not require me to use Webpack as an
-            addition due to it being built-in.
-          </p>
-        </div>
-
-        <div class="carousel">
-          <div id="sixthCarousel"></div>
-        </div>
-      </article>  
+    
     </section>
 
     <section class="section3">
@@ -164,15 +180,15 @@
     </section>
   
     <footer>
-      <p>&copy; Mace Akkari 2021</p>
+      <p>&copy; Mace Akkari 2022</p>
     </footer>
 
     <script>
       // Generate image path
 
-      const reactCrypto = Array.from(
-        new Array(8),
-        (_, i) => `./projectImgs/reactCrypto/react-crypto${i}.png`
+      const themartian = Array.from(
+        new Array(9),
+        (_, i) => `./projectImgs/themartian/themartian-pic${i}.png`
       );
       const maceFitness = Array.from(
         new Array(16),
@@ -182,9 +198,9 @@
         new Array(10),
         (_, i) => `./projectImgs/catchMe/catchMe-pic${i}.png`
       );
-      const repoVx3 = Array.from(
+      const blogsite = Array.from(
         new Array(6),
-        (_, i) => `./projectImgs/repoV3/vue3-pic${i}.png`
+        (_, i) => `./projectImgs/blogsite/blogsite-pic${i}.png`
       );
       const makersBnB = Array.from(
         new Array(10),
@@ -194,13 +210,19 @@
         new Array(10),
         (_, i) => `./projectImgs/fruity/fruity-pic${i}.png`
       );
+      const whatasapp = Array.from(
+        new Array(11),
+        (_, i) => `./projectImgs/whatasapp/whatasapp-pic${i}.png`
+      );
+
 
       createCarousel("#firstCarousel", catchMe);
       createCarousel("#secondCarousel", makersBnB);
       createCarousel("#thirdCarousel", fruity);
       createCarousel("#fourthCarousel", maceFitness);
-      createCarousel("#fifthCarousel", reactCrypto);
-      createCarousel("#sixthCarousel", repoVx3);
+      createCarousel("#fifthCarousel", themartian);
+      createCarousel("#sixthCarousel", blogsite);
+      createCarousel("#seventhCarousel", whatasapp);
 
       // Contanier and image elements
       function createCarousel(target, imagePaths) {
